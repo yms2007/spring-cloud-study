@@ -6,7 +6,28 @@
 
     <groupId>com.inspur</groupId>
     <artifactId>spring-cloud-study</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+    <parent>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>1.4.3.RELEASE</version>
+        </parent>
+    <modules>
+        <module>micorservice-simple-provider-user</module>
+    </modules>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Camden.SR4</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
