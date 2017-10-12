@@ -13,19 +13,25 @@
         <java.version>1.8</java.version>
     </properties>
     <parent>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-parent</artifactId>
-            <version>1.4.3.RELEASE</version>
-        </parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.0.RELEASE</version>
+    </parent>
     <modules>
         <module>micorservice-simple-provider-user</module>
+        <module>micorservice-simple-consumer-movie</module>
+        <module>microservice-discovery-eureka</module>
+        <module>micorservice-provider-user</module>
+        <module>hello-world</module>
     </modules>
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Camden.SR4</version>
+                <version>Brixton.SR5</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
